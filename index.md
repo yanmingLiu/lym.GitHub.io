@@ -1,5 +1,8 @@
 
-# iOS葵花宝典之Swift
+iOS葵花宝典之Swift
+
+
+>记录工作中常用第三方库...
 
 ### 网络篇
 
@@ -35,6 +38,10 @@ HandyJSON是由阿里巴巴出品swift解析库，上手容易，能让你找到
 
 **[Cache](https://github.com/hyperoslo/Cache)**
 Cache除了缓存，它什么也没做，但它做得很好。它提供了一个很好的公共API，具有现成的实现和巨大的自定义可能性。Cache利用Codable执行序列化。
+
+**[GRDB.swift](https://github.com/groue/GRDB.swift)** 与SQLite.swift或FMDB相比，GRDB可以省去很多胶水代码。与Core Data或Realm相比，它可以简化您的多线程应用程序
+
+
 
 ### 图片篇
 
@@ -77,8 +84,42 @@ swift版的 Masonry.
 
 ### UI篇
 
-**[ESPullToRefresh](https://github.com/eggswift/pull-to-refresh)**
-ESPullToRefresh是一个非常易于开发者使用的下拉刷新和加载更多组件。
+#### 下拉刷新
+
+**[ESPullToRefresh](https://github.com/eggswift/pull-to-refresh)** swift下拉刷新和加载更多组件，但是Bug有点多。
+
+**[MJRefresh](https://github.com/CoderMJLee/MJRefresh)** 即便是swift依然没有找到比它更好的。
+
+#### 轮播库
+
+**[FSPagerView](https://github.com/WenchaoD/FSPagerView)**
+FSPagerView是一个优雅的轮播库，主要通过UICollectionView实现。
+
+**[MarqueeLabel](https://github.com/cbpowell/MarqueeLabel)** 跑马灯
+
+#### 瀑布流
+
+**[CollectionViewWaterfallLayout](https://github.com/ecerney/CollectionViewWaterfallLayout)**
+**[WaterfallMultiSectionFlowLayout](https://github.com/RoganZheng/WaterfallMultiSectionFlowLayout)**
+瀑布流基于 UICollectionViewFlowLayout 实现，支持多 section 场景下瀑布流、线性排列、九宫格样式。
+
+#### 富文本
+
+**[ActiveLabel](https://github.com/optonaut/ActiveLabel.swift)** 处理标签中 # 符号， @ 符号，以及超链接文本的框架。它可以识别并标注 label 视图中的这些要素，并为它们添加点击事件。
+
+**[SwiftyAttributes](https://github.com/eddiekaiger/SwiftyAttributes)**   先进的 API ，操作 attributed 字符串的利器。
+
+#### Toast
+
+**[Toast-Swift](https://github.com/scalessec/Toast-Swift)**  使用简单弹窗提示。
+
+**[NotificationBannerSwift](https://github.com/maheshbutani/NotificationBannerSwift-customizable-in-app-notification-)** 类似系统通知提示。
+
+#### 输入框
+
+**[TextFieldEffects](https://github.com/raulriera/TextFieldEffects)**   各种动画效果输入框。
+
+#### loadingView
 
 **[SkeletonView](https://github.com/Juanpe/SkeletonView)**
 骨架屏,demo中collection cell未加载出子视图是因为demo中子视图是添加到cell上，改为  contentView.addSubview(imageView)即可。
@@ -86,30 +127,20 @@ ESPullToRefresh是一个非常易于开发者使用的下拉刷新和加载更�
 **[EmptyStateKit](https://github.com/alberdev/EmptyStateKit)**
 空白页灵活性和易用性，在任何具有刷新内容功能的UIView或UITableView / UICollectionView中显示出色的占位符为空状态。
 
-**[FSPagerView](https://github.com/WenchaoD/FSPagerView)**
-FSPagerView是一个优雅的轮播库，主要通过UICollectionView实现。
+**[NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView)** 32种loading加载动画。
 
-**[AutoInch](https://github.com/lixiang1994/AutoInch)**
-优雅的iPhone等比例/全尺寸精准适配工具
+#### 浮窗
+**[FloatingPanel](https://github.com/SCENEE/FloatingPanel)** 评论弹窗浮窗，高德地图首页浮窗效果。
 
-**[CollectionViewWaterfallLayout](https://github.com/ecerney/CollectionViewWaterfallLayout)**
-**[WaterfallMultiSectionFlowLayout](https://github.com/RoganZheng/WaterfallMultiSectionFlowLayout)**
-瀑布流基于 UICollectionViewFlowLayout 实现，支持多 section 场景下瀑布流、线性排列、九宫格样式。
+#### 进度条
+**[MultiProgressView](https://github.com/mac-gallagher/MultiProgressView)** 手机存储空间一样的进度条。
 
-**[SwiftyAttributes](https://github.com/eddiekaiger/SwiftyAttributes)**  
-先进的 API ，操作 attributed 字符串的利器。
+#### pageView
 
-**[Toast-Swift](https://github.com/scalessec/Toast-Swift)**  
-使用简单弹窗提示。
+**[JXPagingView](https://github.com/pujiaxin33/JXPagingView)**  个人主页效果，多页面嵌套，既可以上下滑动，也可以左右滑动切换页面。
 
-**[TextFieldEffects](https://github.com/raulriera/TextFieldEffects)**   
-带动画输入框。
+#### K线图
+**[HSStockChart](https://github.com/zyphs21/HSStockChart)**
 
-**[NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView)** 3
-2种loading加载动画。
-
-
-**[UIDrawer-modalPresentationStyle](https://github.com/Que20/UIDrawer)**
-**[HWPanModal-modalPresentationStyle](https://github.com/HeathWang/HWPanModal)**
-仿iOS13交互式的弹出视图
-
+#### 直播相关
+**[vap](https://github.com/Tencent/vap)** 腾讯用于播放酷炫动画的实现方案。
